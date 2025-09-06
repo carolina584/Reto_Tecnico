@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Booking Appointments in the JQuery UI Datepicker","Booking an appointment by selecting a date from the calendar","SUCCESS","2025-09-05T21:32:11.575-05:00[America/Bogota]","0.0","5.91"
+"Booking Appointments in the JQuery UI Datepicker","Select a specific date in a different month","SUCCESS","2025-09-05T21:32:18.21-05:00[America/Bogota]","0.0","4.2"
+"Booking Appointments in the JQuery UI Datepicker","Validate disabled field","SUCCESS","2025-09-05T21:32:23.14-05:00[America/Bogota]","0.0","2.99"
