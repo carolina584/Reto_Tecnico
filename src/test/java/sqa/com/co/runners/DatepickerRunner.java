@@ -1,4 +1,4 @@
-package datepicker.com.co.runners;
+package sqa.com.co.runners;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.SnippetType;

@@ -1,4 +1,4 @@
-package datepicker.com.co.userinterfaces;
+package sqa.com.co.userinterfaces;
 
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.targets.Target;

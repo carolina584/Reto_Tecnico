@@ -1,6 +1,6 @@
-package datepicker.com.co.questions;
+package sqa.com.co.questions;
 
-import datepicker.com.co.userinterfaces.HomePage;
+import sqa.com.co.userinterfaces.HomePage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.actions.Switch;

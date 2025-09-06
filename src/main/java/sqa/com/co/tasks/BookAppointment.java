@@ -1,7 +1,8 @@
-package datepicker.com.co.tasks;
+package sqa.com.co.tasks;
 
-import datepicker.com.co.userinterfaces.CalendarPage;
-import datepicker.com.co.userinterfaces.HomePage;
+import sqa.com.co.exceptions.ExceptionDate;
+import sqa.com.co.userinterfaces.CalendarPage;
+import sqa.com.co.userinterfaces.HomePage;
 import net.serenitybdd.core.pages.WebElementState;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -23,12 +24,15 @@ public class BookAppointment implements Task {
     @Step("{0} book appointment")
     @Override
     public <T extends Actor> void performAs(T actor) {
-
+        try {
         WebElementState iframeElement = actor.asksFor(WebElementQuestion.valueOf(CalendarPage.IFRAME_DATEPICKER));
         actor.attemptsTo(
                 Switch.toFrame((WebElement) iframeElement),
                 Click.on(HomePage.DATE_INPUT_FIELD),
                 Click.on(HomePage.day(day)));
+        } catch (Exception e){
+            throw new ExceptionDate(ExceptionDate.ELEMENT_MESSAGE, e);
+        }
     }
 
     public static BookAppointment inDate(String day) {

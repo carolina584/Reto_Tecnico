@@ -1,16 +1,21 @@
-package datepicker.com.co.stepsdefinitions;
+package sqa.com.co.stepsdefinitions;
 
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import datepicker.com.co.questions.TheSelectDate;
-import datepicker.com.co.questions.ValidateFieldStatus;
+import sqa.com.co.questions.TheSelectDate;
+import sqa.com.co.questions.ValidateFieldStatus;
 import datepicker.com.co.tasks.*;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
+import sqa.com.co.tasks.BookAppointment;
+import sqa.com.co.tasks.BookAppointmentInNextMonth;
+import sqa.com.co.tasks.Goto;
+import sqa.com.co.tasks.IFrame;
+
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.Matchers.equalTo;
@@ -53,7 +58,7 @@ public class DatepickerStepDefinition {
     }
     @When("^try entering a date manually in the text field$")
     public void tryEnteringADateManuallyInTheTextField() {
-        user.attemptsTo(IFrame.page());
+        user.attemptsTo(IFrame.calendar());
     }
     @Then("^the field should not allow manual input and be read-only$")
     public void theFieldShouldNotAllowManualInputAndBeReadOnly() {
